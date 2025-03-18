@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background_gradient"
+    android:padding="20dp">
+
+    <!-- Glassmorphic Card -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="10dp"
+        android:background="@drawable/glass_background"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <!-- Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add New Student"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:paddingBottom="12dp"/>
+
+            <!-- Student Name -->
+            <EditText
+                android:id="@+id/editTextName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Full Name"
+                android:padding="12dp"
+                android:background="@drawable/edit_text_rounded"
+                android:drawableStart="@drawable/outline_email_24"
+                android:drawablePadding="10dp"
+                android:inputType="textPersonName"/>
+
+            <!-- PRN -->
+            <EditText
+                android:id="@+id/editTextPRN"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="PRN Number"
+                android:padding="12dp"
+                android:background="@drawable/edit_text_rounded"
+                android:drawableStart="@drawable/outline_password_24"
+                android:drawablePadding="10dp"
+                android:inputType="number"
+                android:layout_marginTop="10dp"/>
+
+            <!-- Email -->
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Email Address"
+                android:padding="12dp"
+                android:background="@drawable/edit_text_rounded"
+                android:drawableStart="@drawable/baseline_inbox_24"
+                android:drawablePadding="10dp"
+                android:inputType="textEmailAddress"
+                android:layout_marginTop="10dp"/>
+
+            <!-- Course -->
+            <EditText
+                android:id="@+id/editTextCourse"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Course (e.g., B.Tech)"
+                android:padding="12dp"
+                android:background="@drawable/edit_text_rounded"
+                android:drawableStart="@drawable/outline_email_24"
+                android:drawablePadding="10dp"
+                android:inputType="text"
+                android:layout_marginTop="10dp"/>
+
+            <!-- Year -->
+            <EditText
+                android:id="@+id/editTextYear"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Year (e.g., 2nd Year)"
+                android:padding="12dp"
+                android:background="@drawable/edit_text_rounded"
+                android:drawableStart="@drawable/calendar"
+                android:drawablePadding="10dp"
+                android:inputType="text"
+                android:layout_marginTop="10dp"/>
+
+            <!-- Phone -->
+            <EditText
+                android:id="@+id/editTextPhone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Phone Number"
+                android:padding="12dp"
+                android:background="@drawable/edit_text_rounded"
+                android:drawableStart="@drawable/outline_email_24"
+                android:drawablePadding="10dp"
+                android:inputType="phone"
+                android:layout_marginTop="10dp"/>
+
+            <!-- Save Student Button -->
+            <Button
+                android:id="@+id/btnSaveStudent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save Student"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:background="@drawable/button_gradient"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="20dp"/>
+
+            <!-- Progress Bar (Hidden Initially) -->
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

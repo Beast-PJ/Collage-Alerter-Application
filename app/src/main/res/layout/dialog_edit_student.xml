@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/glass_background">
+
+    <!-- Dialog Title -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit Student"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:paddingBottom="10dp"/>
+
+    <!-- Student Name -->
+    <EditText
+        android:id="@+id/editStudentName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Student Name"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_background"/>
+
+    <!-- PRN -->
+    <EditText
+        android:id="@+id/editStudentPrn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="PRN Number"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_background"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Email -->
+    <EditText
+        android:id="@+id/editStudentEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_background"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Course -->
+    <EditText
+        android:id="@+id/editStudentCourse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Course (e.g., B.Tech)"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_background"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Year -->
+    <EditText
+        android:id="@+id/editStudentYear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Year (e.g., 2nd Year)"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_background"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Phone Number -->
+    <EditText
+        android:id="@+id/editStudentPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone Number"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_background"
+        android:inputType="phone"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Action Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:layout_marginTop="12dp">
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:textSize="16sp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@android:color/darker_gray"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:textSize="16sp"
+            android:backgroundTint="@android:color/holo_blue_dark"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+
+</LinearLayout>

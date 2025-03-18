@@ -1,0 +1,36 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="prime">#FF24D3FE</color>
+    <color name="prime2">#1C97EA</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primaryTextColor">#000000</color>
+    <color name="modeColor">#ffffff</color>
+    <color name="backColor">#ffffff</color>
+    <color name="dialogueBtn">#f9a825</color>
+    <color name="mtrl_textinput_default_box_stroke_color" tools:override="true">#c1c2c4</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="red">#FF1100</color>
+    <!--  Primary Colors  -->
+    <color name="primaryColor">#0F4C81</color>
+    <color name="primaryDarkColor">#0D3A66</color>
+    <color name="accentColor">#FFD700</color>
+    <!--  Background Colors  -->
+    <color name="backgroundLight">#FFFFFF</color>
+    <color name="backgroundDark">#F5F5F5</color>
+    <!--  Text Colors  -->
+    <color name="textPrimary">#212121</color>
+    <color name="textSecondary">#757575</color>
+    <!--  Subject Card Colors  -->
+    <color name="mathsColor">#4A90E2</color>
+    <color name="scienceColor">#E74C3C</color>
+    <color name="englishColor">#F39C12</color>
+    <color name="accountsColor">#9B59B6</color>
+    <color name="computerColor">#2980B9</color>
+    <color name="drawingColor">#E91E63</color>
+    <!--  Bottom Navigation Colors  -->
+    <color name="bottomNavActive">#00C853</color>
+    <color name="bottomNavInactive">#BDBDBD</color>
+    <color name="light_gray">#F5F5F5</color>
+    <color name="primary_text_color">#333333</color>
+    <color name="primary_color">#007AFF</color>
+</resources>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Election Title -->
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student Elections"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Candidate List RecyclerView -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/candidateRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_marginBottom="20dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_candidate"/>
+
+        <!-- Add Candidate Button -->
+        <Button
+            android:id="@+id/btnAddCandidate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Candidate"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/candidateRecyclerView"
+            android:backgroundTint="@color/black"
+            android:textColor="@android:color/white"
+            android:padding="12dp"
+            android:elevation="4dp"/>
+
+        <!-- Show Results Button -->
+        <Button
+            android:id="@+id/btnShowResults"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Show Results"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/btnAddCandidate"
+            android:background="@drawable/button_gradient"
+            android:textColor="@android:color/white"
+            android:padding="12dp"
+            android:elevation="6dp"
+            android:layout_centerHorizontal="true"/>
+
+        <!-- Election Results TextView -->
+        <TextView
+            android:id="@+id/txtResults"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Election Results will be displayed here..."
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:background="@android:color/white"
+            android:elevation="5dp"
+            android:visibility="gone"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/btnShowResults"/>
+
+    </RelativeLayout>
+</ScrollView>

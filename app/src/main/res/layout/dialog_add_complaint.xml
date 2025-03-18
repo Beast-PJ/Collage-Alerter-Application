@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/editComplaint"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:hint="Write your complaint..."
+        android:gravity="top|start"
+        android:padding="12dp"/>
+
+    <Button
+        android:id="@+id/submitComplaintBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit Complaint"
+        android:textSize="18sp"/>
+</LinearLayout>

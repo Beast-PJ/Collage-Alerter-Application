@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@android:color/white"
+    tools:context=".Student.StudentVoteActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/titleVote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cast Your Vote"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Candidate List RecyclerView -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/candidateRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titleVote"
+            android:layout_marginBottom="20dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_candidate"/>
+
+        <!-- Submit Vote Button -->
+        <Button
+            android:id="@+id/btnSubmitVote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit Vote"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/candidateRecyclerView"
+            android:backgroundTint="@color/black"
+            android:textColor="@android:color/white"
+            android:padding="12dp"
+            android:elevation="4dp"/>
+    </RelativeLayout>
+</ScrollView>

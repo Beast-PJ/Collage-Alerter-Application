@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "544976567642",
+    "project_id": "collage-alerter-app-4f01a",
+    "storage_bucket": "collage-alerter-app-4f01a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:544976567642:android:27d78c6771935a66644763",
+        "android_client_info": {
+          "package_name": "com.example.collage_alerter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-1wiOJRd2nawREfLQXkwLqIv-oNxGCL0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
